@@ -1,0 +1,7 @@
+[Unit]
+Description=Daily lb-sync service
+Documentation=man:systemd.service(5)
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/fish -c lb-sync-phone

@@ -1,0 +1,39 @@
+abbr -a -- op termux-open # imported from a universal variable, see `help abbr`
+abbr -a -- funced 'funced -s' # imported from a universal variable, see `help abbr`
+abbr -a -- adbpair 'fakeroot adb pair 192.168.1.242:45492 263695' # imported from a universal variable, see `help abbr`
+abbr -a -- clip termux-clipboard-set # imported from a universal variable, see `help abbr`
+abbr -a -- gclone 'git clone' # imported from a universal variable, see `help abbr`
+abbr -a -- vd 'catt volumedown' # imported from a universal variable, see `help abbr`
+abbr -a -- gp 'git pull' # imported from a universal variable, see `help abbr`
+abbr -a -- q exit # imported from a universal variable, see `help abbr`
+abbr -a -- es 'nano /data/data/com.termux/files/home/.shortcuts/tasks/syncthing.sh' # imported from a universal variable, see `help abbr`
+abbr -a -- sshg 'ssh -T pakon TERM=xterm-256color ssh -tt pulse15' # imported from a universal variable, see `help abbr`
+abbr -a -- vu 'catt volumeup' # imported from a universal variable, see `help abbr`
+abbr -a -- tee 'tee -a' # imported from a universal variable, see `help abbr`
+abbr -a -- gr 'git reset' # imported from a universal variable, see `help abbr`
+abbr -a -- unli 'ssh jacob@unli.xyz -i storage/shared/Android/SECURE/ranch' # imported from a universal variable, see `help abbr`
+abbr -a -- relmv lb relmv -v
+abbr -a -- ga git add .
+abbr -a -- abbr abbrsave
+abbr -a -- watch repeat wt -L1 --action ask_move_or_delete --keep-dir /data/data/com.termux/files/home/sync/video/keep/
+abbr -a -- pkginstall aptinstall
+abbr -a -- gd git diff
+abbr -a -- df df -h
+abbr -a -- videos repeat wt -db /data/data/com.termux/files/home/lb/video.db -u duration desc --fetch-siblings each -L1 --action ask_move_or_delete --keep-dir /data/data/com.termux/files/home/sync/video/keep/
+abbr -a -- sshh ssh\ -4\ pakon\ -t\ tmux\ new-session\ -A\ -s\ phone\ \"\'fish\ -c\ home.clean\;\ exec\ fish\'\"
+abbr -a -- taxes repeat wt -db /data/data/com.termux/files/home/lb/tax.db -u duration desc -L1 --action ask_move_or_delete --keep-dir /data/data/com.termux/files/home/sync/porn/video/keep/ --portrait
+abbr -a -- py python
+abbr -a -- lbr lb-refresh
+abbr -a -- mkdir mkdir -p
+abbr -a -- gds git diff --staged
+abbr -a -- gs git status --untracked-files
+abbr -a -- grm git restore --staged --worktree
+abbr -a -- ipy ipython
+abbr -a -- mkcdtemp 'cd (mktemp -d)'
+abbr -a -- zj z j
+abbr -a -- log logcat
+abbr -a -- wipam git amend
+abbr -a -- tmux tmux new-session -A -s phone
+abbr -a -- pkguninstall aptuninstall
+abbr -a -- refresh-sdcard am broadcast -a android.intent.action.MEDIA_MOUNTED -d file:///sdcard
+abbr -a -- editcb 'cb | vipe | cb'

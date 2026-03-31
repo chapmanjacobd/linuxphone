@@ -1,0 +1,9 @@
+#!/usr/bin/fish
+
+if test -t 0
+    # Read from clipboard
+    wl-paste
+else
+    # Write to clipboard
+    wl-copy
+end

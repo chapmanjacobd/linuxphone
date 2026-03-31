@@ -1,0 +1,7 @@
+[Unit]
+Description=Daily wakeup service
+Documentation=man:systemd.service(5)
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/ssh xk@192.168.1.114 lt-wakeup

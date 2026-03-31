@@ -1,0 +1,10 @@
+[Unit]
+Description=Daily lb-sync timer
+Documentation=man:systemd.timer(5)
+
+[Timer]
+OnCalendar=*-*-* 02:00:00
+Persistent=true
+
+[Install]
+WantedBy=timers.target

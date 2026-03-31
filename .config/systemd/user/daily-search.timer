@@ -1,0 +1,10 @@
+[Unit]
+Description=Daily search timer
+Documentation=man:systemd.timer(5)
+
+[Timer]
+OnCalendar=*-*-* 22:20:00
+Persistent=true
+
+[Install]
+WantedBy=timers.target

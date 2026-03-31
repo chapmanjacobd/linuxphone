@@ -1,0 +1,8 @@
+[Unit]
+Description=Weekly upgrade service
+Documentation=man:systemd.service(5)
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/pkcon refresh force
+ExecStart=/usr/bin/pkcon get-updates

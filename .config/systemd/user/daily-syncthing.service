@@ -1,0 +1,7 @@
+[Unit]
+Description=Daily syncthing service
+Documentation=man:systemd.service(5)
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/fish /home/user/.shortcuts/tasks/syncthing.sh

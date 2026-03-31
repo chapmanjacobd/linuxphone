@@ -1,0 +1,30 @@
+# This file contains fish universal variable definitions.
+# VERSION: 3.0
+SETUVAR --export EDITOR:nano
+SETUVAR --export --path LOCATE_PATH:/var/lib/plocate/plocate.db
+SETUVAR --export MPV_SOCKET:/tmp/mpv_socket
+SETUVAR __fish_initialized:4300
+SETUVAR _fish_abbr_adbpair:fakeroot\x20adb\x20pair\x20192\x2e168\x2e1\x2e242\x3a45492\x20263695
+SETUVAR _fish_abbr_clip:cb\x20copy
+SETUVAR _fish_abbr_es:nano\x20/home/user/\x2eshortcuts/tasks/syncthing\x2esh
+SETUVAR _fish_abbr_funced:funced\x20\x2ds
+SETUVAR _fish_abbr_gclone:git\x20clone
+SETUVAR _fish_abbr_gp:git\x20pull
+SETUVAR _fish_abbr_gr:git\x20reset
+SETUVAR _fish_abbr_op:xdg\x2dopen
+SETUVAR _fish_abbr_q:exit
+SETUVAR _fish_abbr_sshg:ssh\x20\x2dT\x20pakon\x20TERM\x3dxterm\x2d256color\x20ssh\x20\x2dtt\x20pulse15
+SETUVAR _fish_abbr_sshh:ssh\x20pakon\x20\x2dt\x20tmux\x20new\x2dsession\x20\x2dA\x20\x2ds\x20phone
+SETUVAR _fish_abbr_tee:tee\x20\x2da
+SETUVAR _fish_abbr_unli:ssh\x20jacob\x40unli\x2exyz\x20\x2di\x20/home/user/Android/SECURE/ranch
+SETUVAR _fish_abbr_vd:catt\x20volumedown
+SETUVAR _fish_abbr_vu:catt\x20volumeup
+SETUVAR _fisher_jorgebucaran_2F_autopair_2E_fish_files:\x7e/\x2econfig/fish/functions/_autopair_backspace\x2efish\x1e\x7e/\x2econfig/fish/functions/_autopair_insert_left\x2efish\x1e\x7e/\x2econfig/fish/functions/_autopair_insert_right\x2efish\x1e\x7e/\x2econfig/fish/functions/_autopair_insert_same\x2efish\x1e\x7e/\x2econfig/fish/functions/_autopair_tab\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/autopair\x2efish
+SETUVAR _fisher_jorgebucaran_2F_fisher_files:\x7e/\x2econfig/fish/functions/fisher\x2efish\x1e\x7e/\x2econfig/fish/completions/fisher\x2efish
+SETUVAR _fisher_patrickf1_2F_fzf_2E_fish_files:\x7e/\x2econfig/fish/functions/_fzf_configure_bindings_help\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_extract_var_info\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_preview_changed_file\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_preview_file\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_report_diff_type\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_report_file_type\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_search_directory\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_search_git_log\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_search_git_status\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_search_history\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_search_processes\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_search_variables\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_wrapper\x2efish\x1e\x7e/\x2econfig/fish/functions/fzf_configure_bindings\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/fzf\x2efish\x1e\x7e/\x2econfig/fish/completions/fzf_configure_bindings\x2efish
+SETUVAR _fisher_plugins:jorgebucaran/fisher\x1epatrickf1/fzf\x2efish\x1ejorgebucaran/autopair\x2efish
+SETUVAR _fisher_upgraded_to_4_4:\x1d
+SETUVAR fish_features:no\x2dkeyboard\x2dprotocols
+SETUVAR fish_user_paths:/home/user/go/bin\x1e/home/user/bin\x1e/home/user/\x2eshortcuts/tasks
+SETUVAR --export servers:pakon\x1ebackup\x1er730xd\x1elen
+SETUVAR --export servers_local:pakon\x1ebackup\x1er730xd\x1elen

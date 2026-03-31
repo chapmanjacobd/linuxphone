@@ -1,0 +1,7 @@
+[Unit]
+Description=Daily pip upgrade service
+Documentation=man:systemd.service(5)
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/pip install --upgrade --pre library yt-dlp[default,curl-cffi]

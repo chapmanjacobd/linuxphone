@@ -1,0 +1,7 @@
+[Unit]
+Description=Daily search service
+Documentation=man:systemd.service(5)
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/ssh xk@192.168.1.114 lt-search Bedroom 40 relax
