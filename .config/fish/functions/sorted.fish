@@ -1,8 +1,8 @@
 # Defined via `source`
 function sorted
     if isatty stdin
-        sort --unique --stable --ignore-case $argv | sponge $argv
+        sort -u -s -f $argv | sponge $argv
     else
-        cat - | string trim | sort --unique --stable --ignore-case | strip
+        cat - | string trim | sort -u -s -f | strip
     end
 end

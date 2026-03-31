@@ -12,7 +12,7 @@ function morganize
         end
 
         if string match -q -- $HOME'/mc/*.txt' "$f"
-            sort --unique --stable --ignore-case "$f" | sed '/^$/d' | sponge "$f"
+            sort -u -s -f "$f" | sed '/^$/d' | sponge "$f"
         end
 
         if string match -q -- '*.list' "$f"
