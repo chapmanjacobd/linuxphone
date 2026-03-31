@@ -12,7 +12,7 @@ source $__fish_config_dir/abbreviations
 fish_config theme choose nothing
 
 function fish_prompt_postexec --on-event fish_postexec
-    set -l last_pipestatus $pipestatus
+    set -g last_pipestatus $pipestatus
 
     set -l failed 0
     for s in $last_pipestatus
@@ -36,6 +36,17 @@ function fish_prompt_postexec --on-event fish_postexec
     else
         printf '%s\n' (__fish_print_pipestatus $last_pipestatus)
     end
+end
+
+function __fish_print_pipestatus
+    set -l s
+    for code in $argv
+        if test $code -eq 0
+            continue
+        end
+        set s $s (set_color $fish_color_error)$code(set_color normal)
+    end
+    string join ' ' -- $s
 end
 
 source ~/.config/fish/functions/ls.fish

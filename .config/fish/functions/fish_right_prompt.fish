@@ -15,11 +15,11 @@ function fish_right_prompt
 
     #set -l d (set_color brgrey)(date "+%R")(set_color normal)
 
-    set -l duration "$cmd_duration$CMD_DURATION"
-    if test $duration -gt 100
+    set -l duration "$CMD_DURATION"
+    if test -n "$duration" && test "$duration" -gt 100 2>/dev/null
         set duration (math $duration / 1000)s
     else
-        set duration
+        set duration ""
     end
 
     set -q VIRTUAL_ENV_DISABLE_PROMPT
