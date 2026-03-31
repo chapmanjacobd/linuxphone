@@ -1,5 +1,7 @@
 #!/bin/bash
 
+sudo visudo
+
 cat ~/.github/etc/ssh/sshd_config.d/10-xk.conf | sudo tee /etc/ssh/sshd_config.d/10-xk.conf
 sudo systemctl enable --now sshd
 
@@ -29,3 +31,19 @@ fi
 if command -v wl-copy &> /dev/null; then
   ln -sf /usr/bin/wl-copy ~/.local/bin/xclip 2>/dev/null || true
 fi
+
+sudo sed -i 's/#Storage=.*/Storage=volatile/' /etc/systemd/journald.conf
+sudo systemctl enable --now tlp.service
+
+# TLP power management settings
+cat <<EOF | sudo tee -a /etc/tlp.conf
+CPU_SCALING_GOVERNOR_ON_BAT=schedutil
+CPU_SCALING_GOVERNOR_ON_SAV=powersave
+PCIE_ASPM_ON_BAT=powersupersave
+
+CPU_ENERGY_PERF_POLICY_ON_BAT=power
+TLP_DEFAULT_MODE=BAT
+TLP_PERSISTENT_DEFAULT=1
+EOF
+
+sudo iw dev wlan0 set power_save on
