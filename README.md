@@ -1,4 +1,4 @@
-# phone
+# linuxphone
 Phoneware for postmarketOS Gnome Mobile
 
 ## Installation
