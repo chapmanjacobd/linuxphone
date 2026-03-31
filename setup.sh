@@ -1,5 +1,8 @@
 #!/bin/bash
 
+cat ~/.github/etc/ssh/sshd_config.d/10-xk.conf | sudo tee /etc/ssh/sshd_config.d/10-xk.conf
+sudo systemctl enable --now sshd
+
 # Install packages from apk_installed list
 sudo apk add $(cat ~/.github/apk_installed)
 
