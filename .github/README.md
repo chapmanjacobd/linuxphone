@@ -15,5 +15,5 @@ cd $HOME
 git clone --no-checkout https://github.com/chapmanjacobd/linuxphone
 mv linuxphone/.git/ .
 git reset HEAD --hard  # mi casa, su casa? sin casa: this will delete everything in your home folder
-bash setup.sh
+bash .github/setup.sh
 ```
