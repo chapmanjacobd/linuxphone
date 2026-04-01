@@ -10,7 +10,7 @@ sudo sed -i 's/#Storage=.*/Storage=volatile/' /etc/systemd/journald.conf
 sudo systemctl restart systemd-journald
 
 sudo rsync -r --chmod=644 .github/etc/ /etc/
-sudo rsync -r --chmod=644 .github/lib/ /lib/
+sudo rsync -r --chmod=644 .github/usr/ /usr/
 sudo systemctl daemon-reload
 
 sudo systemctl enable --now sshd
