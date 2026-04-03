@@ -40,3 +40,6 @@ pip install $(cat .github/pip_installed)
 if command -v cargo &> /dev/null; then
     cargo install $(cat .github/cargo_installed)
 fi
+
+chsh -s /usr/bin/fish user
+sudo cpupower frequency-set -g powersave
